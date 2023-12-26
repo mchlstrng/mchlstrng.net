@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>mchlstrng.net</title>
+    <style>
+        #menu a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
     <script>
         var tileSize = 20;
         // a higher fade factor will make the characters fade quicker
@@ -135,10 +141,14 @@
 
 <body onload="init();" style="margin: 0; padding: 0; background-color:#000000;">
     <canvas id="canvas" width="1280" height="720" style="display:block;margin:0 auto;"></canvas>
-    <div style="display:flex;justify-content:center;align-items:center;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
+    <div
+        style="display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
         <h3 style="color:#ffffff;font-family:monospace;font-size:2em;">mchlstrng.net</h3>
+
+        <div id="menu">
+            <a href="https://mchlstrngchat.azurewebsites.net">CHAT</a>
+        </div>
     </div>
-    
 </body>
 
 </html>
