@@ -109,7 +109,7 @@
             ctx.font = (tileSize - 2) + "px monospace";
             ctx.fillStyle = "rgb( 255 , 255, 255 )";
             for (let i = 0; i < columns.length; ++i) {
-                ctx.fillText('🤓', columns[i].x, columns[i].stackCounter * tileSize + tileSize);
+                ctx.fillText('!', columns[i].x, columns[i].stackCounter * tileSize + tileSize);
 
                 // if the stack is at its height limit, pick a new random height and reset the counter
                 if (++columns[i].stackCounter >= columns[i].stackHeight) {
